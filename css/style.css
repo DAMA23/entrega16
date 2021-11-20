@@ -1,0 +1,320 @@
+
+/*--------------------------------------------------------------
+# Estilos NAVBAR
+--------------------------------------------------------------*/
+.bg-rosa{
+ background-color: #efa6e1;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: #000000;
+    font-weight: 700;
+}
+ 
+.nav-personal {
+    background-color: #efa6e1;
+    border-radius: 1.5rem;
+    padding: -2rem;
+  }
+  .nav-personal a.btn-menu {
+    background-color: #000000;
+    border: 1px solid #00ff90;
+    padding: 3px;
+    box-shadow: -5px -5px #15001D;
+  }
+  .nav-personal li {
+    margin-left: 2rem;
+  }
+  @media (max-width: 576px) {
+    .nav-personal a.btn-menu {
+      background-color: #432B4D;
+      border: 1px solid #00ff90;
+      box-shadow: 0px 0px #15001D;
+      padding: 3px;
+    }
+    .nav-personal li {
+      margin-left: 0;
+    }
+  }
+
+/*--------------------------------------------------------------
+# Index
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# sobre mi
+--------------------------------------------------------------*/
+.iconos{
+
+  overflow:hidden ;
+  }
+.iconos div {
+  width:24%;
+  float:left;
+  overflow:hidden;
+}
+
+.iconos div img{
+  width: 30%;
+  display: block;
+  margin:auto;
+
+}
+
+.iconos div p{
+  text-align: center;
+  color: #000000;
+}
+
+
+.SOFTWARE{
+  text-align:left;
+  padding: 3px;
+  color: #000000;
+  width: 70%;
+}
+
+.CONTACTOS{
+  text-align:left;
+  padding: 3px;
+  color: #000000;
+}
+
+.redes{
+
+  overflow:hidden ;
+  }
+.redes div {
+  width:10%;
+  float:left;
+  overflow:hidden;
+}
+
+.redes div img{
+  width: 70%;
+  display: block;
+  margin:auto;
+
+}
+
+.redes p{
+  text-align: center;
+  color: #000000;
+}
+
+
+/*--------------------------------------------------------------
+# titulos
+--------------------------------------------------------------*/
+.bg-cian {
+  background-color: #3594b9;
+  color: #fcf6f6;
+  padding: 8rem;
+  font-family:'Times New Roman'serif;
+  font-size:clamp(7rem, 10vw, 4rem);
+  font-weight: 900;
+}
+.bg-color1 {
+  background-color: #9ed1d3;
+  color: #000000;
+  padding: 8rem;
+  font-family:'Times New Roman'serif;
+  font-weight: 100;
+}
+
+.bg-color2 {
+  background-color: #6adf87;
+  color: #ffffff;
+  padding: 8rem;
+  font-family:'Times New Roman'serif;
+  font-weight: 100;
+}
+
+.bg-color3 {
+  background-color: #355fb9;
+  color: #fcf6f6;
+  padding: 8rem;
+  font-family:'Times New Roman'serif;
+  font-size:clamp(7rem, 10vw, 4rem);
+  font-weight: 900;
+}
+
+.bg-color4 {
+  background-color: #78c04f;
+  color: #fcf6f6;
+  padding: 2rem;
+  font-family:'Times New Roman'serif;
+  font-size:clamp(7rem, 10vw, 4rem);
+  font-weight: 900;
+  text-align: center;
+}
+
+ /*--------------------------------------------------------------
+# botones
+--------------------------------------------------------------*/
+
+.btn-normal {
+  background-color: #fff131;
+  border: 1px;
+  border-color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  box-shadow: -5px -5px #ffffff;
+  font-size:clamp(1rem, 9vw, 1rem);
+  font-weight: 100;
+}
+
+
+  /*--------------------------------------------------------------
+# Estilos Scroll
+--------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #484949;
+}
+body::-webkit-scrollbar-thumb {
+  /*background: white, 0.2;*/
+  border-radius: 10px;
+  border-right: 10px solid #38bdb6;
+}
+
+
+ /*--------------------------------------------------------------
+# ESTILOS DE MODAL
+--------------------------------------------------------------*/
+.modal-content{
+  background-color: #15001d5d;
+  color: white;
+}
+
+  /*--------------------------------------------------------------
+  # Ejemplo 4: Galeria compleja
+  --------------------------------------------------------------*/
+  
+  .portfolio .portfolio-item {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio #portfolio-flters {
+    padding: 0;
+    margin: 0 auto 20px auto;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .portfolio #portfolio-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 15px 10px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #444444;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+  }
+  
+  .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+    color: #fff;
+    background: var(--color-principal);
+  }
+  
+  .portfolio #portfolio-flters li:last-child {
+    margin-right: 0;
+  }
+  
+  .portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(17, 17, 17, 0.6);
+  }
+  
+  .portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(17, 17, 17, 0.6);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  
+  .portfolio .portfolio-wrap img {
+    transition: all ease-in-out 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info h4 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-info p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links {
+    text-align: center;
+    z-index: 4;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a {
+    color: rgba(255, 255, 255, 0.4);
+    margin: 0 5px 0 0;
+    font-size: 28px;
+    display: inline-block;
+    transition: 0.3s;
+  }
+  
+  .portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #fff;
+  }
+  
+  .portfolio .portfolio-wrap:hover::before {
+    opacity: 1;
+  }
+  
+  .portfolio .portfolio-wrap:hover img {
+    transform: scale(1.2);
+  }
+  
+  .portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+  }
